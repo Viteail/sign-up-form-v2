@@ -7,5 +7,71 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="image-sidebar">
+        <div class="logo-container">
+          <img class="logo" src="/images/pokemonlogo.png" />
+        </div>
+      </div>
+      <div class="main">
+        <div class="description-container">
+          <div class="description">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </div>
+          <div class="second-description">You know you want to.</div>
+        </div>
+        <div class="form-container">
+          <form class="form">
+            <legend>Let's do this!</legend>
+            <div class="wrapper">
+              <div class="input-wrapper">
+                <div class="input-container">
+                  <label for="first_name">FIRST NAME</label>
+                  <input type="text" name="first_name" id="first_name" />
+                </div>
+                <div class="input-container">
+                  <label for="user_email">EMAIL</label>
+                  <input type="email" name="email" id="user_email" />
+                </div>
+                <div class="input-container">
+                  <label for="user_password">PASSWORD</label>
+                  <input type="password" name="password" id="user_password" />
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <div class="input-container">
+                  <label for="last_name">LAST NAME</label>
+                  <input type="text" name="last_name" id="last_name" />
+                </div>
+                <div class="input-container">
+                  <label for="user_phone_number">PHONE NUMBER</label>
+                  <input
+                    type="number"
+                    name="phone_number"
+                    id="user_phone_number"
+                  />
+                </div>
+                <div class="input-container">
+                  <label for="confirm_password">CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    name="confirm_password"
+                    id="confirm_password"
+                  />
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="button-container">
+          <button type="submit" class="submit-btn">Create Account</button>
+
+          <div class="login-wrapper">Already have an account? <span>Log in</span></div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

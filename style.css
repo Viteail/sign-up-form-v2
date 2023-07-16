@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 *,
 *::after,
 *::before {
@@ -11,4 +13,103 @@ html {
 body {
   margin: 0;
   height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --black: #000;
+  --purple: #722bb3;
+  --darkpurple: #472692;
+  --darkblue: #181e76;
+  --white: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.image-sidebar {
+  flex: 1;
+  background: url(images/Violet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 15%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 300px;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+  padding: 20px;
+  color: var(--white);
+  background: var(--darkpurple);
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+  background: var(--purple);
+}
+
+.button-container {
+  flex: 1;
+  padding: 20px;
+  background: var(--darkpurple);
+}
+
+.form > .wrapper {
+  display: flex;
+  gap: 50px;
+  padding: 20px 0px;
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--white);
+}
+
+label {
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.submit-btn {
+}
+
+.login-wrapper {
+  color: var(--white);
 }
