@@ -11,7 +11,7 @@
     <div class="container">
       <div class="image-sidebar">
         <div class="logo-container">
-          <img class="logo" src="/images/pokemonlogo.png" />
+          <img class="logo" src="/images/odin-lined.png" /> ODIN
         </div>
       </div>
       <div class="main">
@@ -30,21 +30,32 @@
               <div class="input-wrapper">
                 <div class="input-container">
                   <label for="first_name">FIRST NAME</label>
-                  <input type="text" name="first_name" id="first_name" />
+                  <input
+                    type="text"
+                    name="first_name"
+                    id="first_name"
+                    required
+                  />
                 </div>
                 <div class="input-container">
                   <label for="user_email">EMAIL</label>
-                  <input type="email" name="email" id="user_email" />
+                  <input type="email" name="email" id="user_email" required />
                 </div>
                 <div class="input-container">
                   <label for="user_password">PASSWORD</label>
-                  <input type="password" name="password" id="user_password" />
+                  <input
+                    type="password"
+                    name="password"
+                    id="user_password"
+                    minlength="5"
+                    required
+                  />
                 </div>
               </div>
               <div class="input-wrapper">
                 <div class="input-container">
                   <label for="last_name">LAST NAME</label>
-                  <input type="text" name="last_name" id="last_name" />
+                  <input type="text" name="last_name" id="last_name" required />
                 </div>
                 <div class="input-container">
                   <label for="user_phone_number">PHONE NUMBER</label>
@@ -52,6 +63,9 @@
                     type="number"
                     name="phone_number"
                     id="user_phone_number"
+                    min="111111111"
+                    max="999999999"
+                    required
                   />
                 </div>
                 <div class="input-container">
@@ -60,16 +74,19 @@
                     type="password"
                     name="confirm_password"
                     id="confirm_password"
+                    minlength="5"
+                    required
                   />
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         <div class="button-container">
           <button type="submit" class="submit-btn">Create Account</button>
-
-          <div class="login-wrapper">Already have an account? <span>Log in</span></div>
         </form>
+          <div class="login-wrapper">
+            Already have an account? <span class="login">Log in</span>
+          </div>
         </div>
       </div>
     </div>
